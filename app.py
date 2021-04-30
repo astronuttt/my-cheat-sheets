@@ -7,7 +7,7 @@ import click
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://chaduxppgekfxg:09a540543492fffd344964c98180c3aa8d8a51ccda61a54f313a3ea8b494ba1c@ec2-54-211-176-156.compute-1.amazonaws.com:5432/dbidd3mltgi075'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://chaduxppgekfxg:09a540543492fffd344964c98180c3aa8d8a51ccda61a54f313a3ea8b494ba1c@ec2-54-211-176-156.compute-1.amazonaws.com:5432/dbidd3mltgi075'
 db = SQLAlchemy(app)
 
 
