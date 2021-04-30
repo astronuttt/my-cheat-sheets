@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css' }}">
+    <title>Cheat sheets</title>
+</head>
+<body>
+    <div class="link-container">
+        {% if len(urls) > 0 %}
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Url</th>
+                    <th>Added at</th>
+                </tr>
+            {% for url in urls %}
+                
+               <tr>
+                   <td><a href="{{ url.url }}">{{ url.title }}</a></td>
+                   <td><a href="{{ url.url }}">{{ url.url }}</a></td>
+                   <td>{{ url.created_at }}</td>
+               </tr> 
+
+            {% endfor %}
+
+            </table>
+
+        {% end if%}
+    </div>
+
+    <div class="anew-container">
+        <div class="new-cheat">
+            <form>
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" required>
+                <label for="url">Url</label>
+                <input type="text" name="url" id="url" required>
+                <input type="submit" value="Add">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
