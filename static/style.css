@@ -1,0 +1,86 @@
+html body {
+    background-color: rgb(48, 48, 48);
+}
+
+div a {
+    text-decoration: none;
+    color: white;
+}
+
+table tr {
+    color: white;
+}
+
+table a {
+    text-decoration: none;
+    color: white;
+}
+
+button.close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+
+.no-row {
+    font-size: 5rem;
+    color: white;
+}
+
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.2;
+}
+
+.close:hover {
+    color: rgb(24, 23, 23);
+}
+
+.new-btn {
+    margin: 1em;
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+.new-cheat {
+    background-color: rgba(78, 78, 78, 0.98);
+    border: 2px solid rgb(56, 56, 56);
+    border-radius: 1em;
+    margin: 2.7em 2em;
+    padding: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+input[type=text], input[type=password] {
+    background-color: rgb(167, 167, 167);
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: rgba(48, 119, 48, 0.8);
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px 5px;
+    margin: 8px 0;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
